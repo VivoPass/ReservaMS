@@ -1,0 +1,17 @@
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\bin\Release\net8.0\ReservasService.Infraestructura.deps.json
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\bin\Release\net8.0\ReservasService.Infraestructura.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\bin\Release\net8.0\ReservasService.Infraestructura.pdb
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\bin\Release\net8.0\ReservasService.Aplicacion.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\bin\Release\net8.0\ReservasService.Dominio.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\bin\Release\net8.0\ReservasService.Aplicacion.pdb
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\bin\Release\net8.0\ReservasService.Dominio.pdb
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\ReservasService.Infraestructura.csproj.AssemblyReference.cache
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\ReservasService.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\ReservasService.Infraestructura.AssemblyInfoInputs.cache
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\ReservasService.Infraestructura.AssemblyInfo.cs
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\ReservasService.Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\Reservas.B3CD1522.Up2Date
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\ReservasService.Infraestructura.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\refint\ReservasService.Infraestructura.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\ReservasService.Infraestructura.pdb
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Release\net8.0\ref\ReservasService.Infraestructura.dll

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.5.5" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="MediatR" Version="13.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReservasService.Aplicacion\ReservasService.Aplicacion.csproj" />
+    <ProjectReference Include="..\ReservasService.Dominio\ReservasService.Dominio.csproj" />
+    <ProjectReference Include="..\ReservasService.Infraestructura\ReservasService.Infraestructura.csproj" />
+  </ItemGroup>
+
+</Project>

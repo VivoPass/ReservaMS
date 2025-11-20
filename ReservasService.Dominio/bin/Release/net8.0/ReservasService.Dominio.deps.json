@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ReservasService.Dominio/1.0.0": {
+        "runtime": {
+          "ReservasService.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReservasService.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

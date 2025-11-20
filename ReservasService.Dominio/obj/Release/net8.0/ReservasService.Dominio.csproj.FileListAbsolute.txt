@@ -1,0 +1,11 @@
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\bin\Release\net8.0\ReservasService.Dominio.deps.json
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\bin\Release\net8.0\ReservasService.Dominio.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\bin\Release\net8.0\ReservasService.Dominio.pdb
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Release\net8.0\ReservasService.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Release\net8.0\ReservasService.Dominio.AssemblyInfoInputs.cache
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Release\net8.0\ReservasService.Dominio.AssemblyInfo.cs
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Release\net8.0\ReservasService.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Release\net8.0\ReservasService.Dominio.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Release\net8.0\refint\ReservasService.Dominio.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Release\net8.0\ReservasService.Dominio.pdb
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Release\net8.0\ref\ReservasService.Dominio.dll
