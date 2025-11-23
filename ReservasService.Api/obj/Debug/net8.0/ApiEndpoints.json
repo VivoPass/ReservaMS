@@ -1,6 +1,48 @@
 [
   {
     "ContainingType": "ReservasService.Api.Controllers.ReservasController",
+    "Method": "ObtenerReservaPorId",
+    "RelativePath": "api/Reservas/{reservaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservaId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReservasService.Aplicacion.DTOS.ReservaUsuarioDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReservasService.Api.Controllers.ReservasController",
+    "Method": "ConfirmarReserva",
+    "RelativePath": "api/Reservas/{reservaId}/confirmar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservaId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReservasService.Api.Controllers.ReservasController",
     "Method": "CrearHoldPorZona",
     "RelativePath": "api/Reservas/hold",
     "HttpMethod": "POST",
@@ -16,6 +58,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[ReservasService.Api.Contracts.ReservaHoldResponse, ReservasService.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReservasService.Api.Controllers.ReservasController",
+    "Method": "ObtenerReservasPorUsuario",
+    "RelativePath": "api/Reservas/usuario/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ReservasService.Aplicacion.DTOS.ReservaUsuarioDTO, ReservasService.Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -18,13 +18,16 @@ namespace ReservasService.Infraestructura.Documents
         [BsonRepresentation(BsonType.String)]
         public Guid ZonaEventoId { get; set; }
         [BsonRepresentation(BsonType.String)]
+        // lo dejamos por compatibilidad, será el “asiento principal”
         public Guid AsientoId { get; set; }
         [BsonRepresentation(BsonType.String)]
         public Guid UsuarioId { get; set; }
-
-        public int Estado { get; set; }  // ReservaEstado como int
-
+        public int Estado { get; set; }
         public DateTime CreadaEn { get; set; }
         public DateTime? ExpiraEn { get; set; }
+
+        public decimal PrecioTotal { get; set; }        // 👈 NUEVO
+
+        public List<ReservaAsientoDocument> Asientos { get; set; } = new();  // 👈 NUEVO
     }
 }

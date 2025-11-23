@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ReservasService.Dominio.Entidades
 {
@@ -13,7 +11,7 @@ namespace ReservasService.Dominio.Entidades
 
         public Id EventId { get; private set; } = null!;
         public Id ZonaEventoId { get; private set; } = null!;
-        public Id AsientoId { get; private set; } = null!;
+        public Id AsientoId { get; private set; } = null!;     // asiento principal (primero)
         public Id UsuarioId { get; private set; } = null!;
 
         public ReservaEstado Estado { get; private set; }
@@ -21,7 +19,12 @@ namespace ReservasService.Dominio.Entidades
         public DateTime CreadaEn { get; private set; }
         public DateTime? ExpiraEn { get; private set; }
 
-        private Reserva() { } 
+        public decimal PrecioTotal { get; private set; }
+
+        private readonly List<ReservaAsiento> _asientos = new();
+        public IReadOnlyCollection<ReservaAsiento> Asientos => _asientos.AsReadOnly();
+
+        private Reserva() { }
 
         public enum ReservaEstado
         {
@@ -31,45 +34,88 @@ namespace ReservasService.Dominio.Entidades
             Expirada
         }
 
-        private Reserva(
+        // -----------------------------
+        //   CREACIÓN MULTI-ASIENTO
+        // -----------------------------
+        public static Reserva CrearHold(
+            Id eventId,
+            Id zonaEventoId,
+            Id usuarioId,
+            IEnumerable<(Id asientoId, decimal precioUnitario, string label)> asientos,
+            TimeSpan tiempoHold)
+        {
+            if (asientos == null || !asientos.Any())
+                throw new ArgumentException("Debe haber al menos un asiento.");
+
+            var lista = asientos.ToList();
+
+            var reserva = new Reserva
+            {
+                Id = Guid.NewGuid(),
+                EventId = eventId,
+                ZonaEventoId = zonaEventoId,
+                UsuarioId = usuarioId,
+                Estado = ReservaEstado.Hold,
+                CreadaEn = DateTime.UtcNow,
+                ExpiraEn = DateTime.UtcNow.Add(tiempoHold)
+            };
+
+            // asiento principal = el primero
+            reserva.AsientoId = lista.First().asientoId;
+
+            foreach (var a in lista)
+            {
+                reserva._asientos.Add(new ReservaAsiento(
+                    Guid.NewGuid(),
+                    a.asientoId,
+                    a.precioUnitario,
+                    a.label
+                ));
+            }
+
+            reserva.PrecioTotal = reserva._asientos.Sum(x => x.PrecioUnitario);
+
+            return reserva;
+        }
+
+        // -----------------------------
+        //  REHIDRATAR DESDE MONGO
+        // -----------------------------
+        public static Reserva Rehidratar(
+            Guid id,
             Id eventId,
             Id zonaEventoId,
             Id asientoId,
             Id usuarioId,
-            TimeSpan duracionHold)
+            ReservaEstado estado,
+            DateTime creadaEn,
+            DateTime? expiraEn,
+            decimal precioTotal
+        )
         {
-            if (duracionHold <= TimeSpan.Zero)
-                throw new ArgumentException("La duración del hold debe ser mayor que cero.", nameof(duracionHold));
-
-            Id = Guid.NewGuid();
-
-            EventId = eventId ?? throw new ArgumentNullException(nameof(eventId));
-            ZonaEventoId = zonaEventoId ?? throw new ArgumentNullException(nameof(zonaEventoId));
-            AsientoId = asientoId ?? throw new ArgumentNullException(nameof(asientoId));
-            UsuarioId = usuarioId ?? throw new ArgumentNullException(nameof(usuarioId));
-
-            Estado = ReservaEstado.Hold;
-
-            CreadaEn = DateTime.UtcNow;
-            ExpiraEn = CreadaEn.Add(duracionHold);
+            return new Reserva
+            {
+                Id = id,
+                EventId = eventId,
+                ZonaEventoId = zonaEventoId,
+                AsientoId = asientoId,
+                UsuarioId = usuarioId,
+                Estado = estado,
+                CreadaEn = creadaEn,
+                ExpiraEn = expiraEn,
+                PrecioTotal = precioTotal
+            };
         }
 
-        public static Reserva CrearHold(
-            Guid eventId,
-            Guid zonaEventoId,
-            Guid asientoId,
-            Guid usuarioId,
-            TimeSpan duracionHold)
+        // Agregar asientos reconstruidos desde Infraestructura
+        public void AgregarAsientoDesdeDocumento(Guid id, Id asientoId, decimal precioUnitario, string label)
         {
-            return new Reserva(
-                new Id(eventId, "EventId"),
-                new Id(zonaEventoId, "ZonaEventoId"),
-                new Id(asientoId, "AsientoId"),
-                new Id(usuarioId, "UsuarioId"),
-                duracionHold
-            );
+            _asientos.Add(new ReservaAsiento(id, asientoId, precioUnitario, label));
         }
 
+        // -----------------------------
+        //         ESTADOS
+        // -----------------------------
         public void Confirmar()
         {
             if (Estado != ReservaEstado.Hold)
@@ -100,30 +146,6 @@ namespace ReservasService.Dominio.Entidades
         public bool EstaExpirada()
         {
             return ExpiraEn.HasValue && ExpiraEn.Value <= DateTime.UtcNow;
-        }
-
-        public static Reserva Rehidratar(
-            Guid id,
-            Id eventId,
-            Id zonaEventoId,
-            Id asientoId,
-            Id usuarioId,
-            ReservaEstado estado,
-            DateTime creadaEn,
-            DateTime? expiraEn)
-        {
-            var reserva = new Reserva();
-
-            reserva.Id = id;
-            reserva.EventId = eventId;
-            reserva.ZonaEventoId = zonaEventoId;
-            reserva.AsientoId = asientoId;
-            reserva.UsuarioId = usuarioId;
-            reserva.Estado = estado;
-            reserva.CreadaEn = creadaEn;
-            reserva.ExpiraEn = expiraEn;
-
-            return reserva;
         }
     }
 }

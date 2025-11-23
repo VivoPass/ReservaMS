@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ReservasService.Dominio.ValueObjects;
 
 namespace ReservasService.Dominio.Interfacess
 {
@@ -11,7 +12,7 @@ namespace ReservasService.Dominio.Interfacess
         /// <summary>
         /// Devuelve una lista de IDs de asientos disponibles en la zona para el evento.
         /// </summary>
-        Task<List<Guid>> ObtenerAsientosDisponiblesAsync(
+        Task<List<AsientoDisponible>> ObtenerAsientosDisponiblesAsync(
             Guid eventId,
             Guid zonaEventoId,
             int cantidad,

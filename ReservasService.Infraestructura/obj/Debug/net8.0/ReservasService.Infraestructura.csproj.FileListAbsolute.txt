@@ -15,3 +15,4 @@ C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.In
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Debug\net8.0\refint\ReservasService.Infraestructura.dll
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Debug\net8.0\ReservasService.Infraestructura.pdb
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Debug\net8.0\ref\ReservasService.Infraestructura.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Infraestructura\obj\Debug\net8.0\ReservasService.Infraestructura.sourcelink.json

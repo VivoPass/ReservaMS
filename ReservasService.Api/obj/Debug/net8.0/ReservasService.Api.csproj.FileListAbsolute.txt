@@ -67,3 +67,4 @@ C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Ap
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Api\obj\Debug\net8.0\ReservasService.Api.pdb
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Api\obj\Debug\net8.0\ReservasService.Api.genruntimeconfig.cache
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Api\obj\Debug\net8.0\ref\ReservasService.Api.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Api\obj\Debug\net8.0\ReservasService.Api.sourcelink.json

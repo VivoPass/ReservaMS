@@ -38,5 +38,7 @@ namespace ReservasService.Dominio.Interfaces
         Task<List<Reserva>> ObtenerHoldsExpiradosHastaAsync(
             DateTime fechaLimite,
             CancellationToken ct = default);
+
+        Task<List<Reserva>> ObtenerPorUsuarioAsync(Guid usuarioId, CancellationToken ct);
     }
 }
