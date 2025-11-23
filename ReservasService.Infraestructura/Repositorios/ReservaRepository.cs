@@ -79,6 +79,20 @@ namespace ReservasService.Infraestructura.Repositorios
             return result;
         }
 
+        public async Task<List<Reserva>> ObtenerPorUsuarioAsync(Guid usuarioId, CancellationToken ct = default)
+        {
+            var builder = Builders<ReservaDocument>.Filter;
+            var filter = builder.Eq(x => x.UsuarioId, usuarioId);
+
+            var docs = await _collection.Find(filter).ToListAsync(ct);
+
+            var result = new List<Reserva>();
+            foreach (var doc in docs)
+                result.Add(ToDomain(doc));
+
+            return result;
+        }
+
         // ------------------ MAPEOS ------------------
 
         private static ReservaDocument ToDocument(Reserva reserva)
@@ -88,33 +102,53 @@ namespace ReservasService.Infraestructura.Repositorios
                 Id = reserva.Id,
                 EventId = reserva.EventId.Value,
                 ZonaEventoId = reserva.ZonaEventoId.Value,
-                AsientoId = reserva.AsientoId.Value,
+                AsientoId = reserva.AsientoId?.Value ?? Guid.Empty,   // por compatibilidad
                 UsuarioId = reserva.UsuarioId.Value,
                 Estado = (int)reserva.Estado,
                 CreadaEn = reserva.CreadaEn,
-                ExpiraEn = reserva.ExpiraEn
+                ExpiraEn = reserva.ExpiraEn,
+                PrecioTotal = reserva.PrecioTotal,                    // 👈 NUEVO
+                Asientos = reserva.Asientos                           // 👈 NUEVO
+                    .Select(a => new ReservaAsientoDocument
+                    {
+                        Id = a.Id,
+                        AsientoId = a.AsientoId.Value,
+                        PrecioUnitario = a.PrecioUnitario,
+                        Label = a.Label
+                    })
+                    .ToList()
             };
         }
 
         private static Reserva ToDomain(ReservaDocument doc)
         {
-            var eventId = new Id(doc.EventId, "EventId");
-            var zonaEventoId = new Id(doc.ZonaEventoId, "ZonaEventoId");
-            var asientoId = new Id(doc.AsientoId, "AsientoId");
-            var usuarioId = new Id(doc.UsuarioId, "UsuarioId");
-
-            var estado = (Reserva.ReservaEstado)doc.Estado;
-
-            return Reserva.Rehidratar(
+            var reserva = Reserva.Rehidratar(
                 doc.Id,
-                eventId,
-                zonaEventoId,
-                asientoId,
-                usuarioId,
-                estado,
+                new Id(doc.EventId, "EventId"),
+                new Id(doc.ZonaEventoId, "ZonaEventoId"),
+                new Id(doc.AsientoId, "AsientoId"),
+                new Id(doc.UsuarioId, "UsuarioId"),
+                (Reserva.ReservaEstado)doc.Estado,
                 doc.CreadaEn,
-                doc.ExpiraEn
+                doc.ExpiraEn,
+                doc.PrecioTotal              // 👈 NUEVO
             );
+
+            if (doc.Asientos != null)
+            {
+                foreach (var a in doc.Asientos)
+                {
+                    reserva.AgregarAsientoDesdeDocumento(
+                        a.Id,
+                        new Id(a.AsientoId, "AsientoId"),
+                        a.PrecioUnitario,
+                        a.Label
+                    );
+                }
+            }
+
+            return reserva;
         }
+
     }
 }

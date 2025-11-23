@@ -8,6 +8,7 @@ using ReservasService.Aplicacion.DTOS;
 using ReservasService.Dominio.Entidades;
 using ReservasService.Dominio.Interfaces;
 using ReservasService.Dominio.Interfacess;
+using ReservasService.Dominio.ValueObjects;
 
 namespace ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona
 {
@@ -42,36 +43,47 @@ namespace ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona
             if (asientosDisponibles.Count < request.CantidadBoletos)
                 throw new InvalidOperationException("No hay suficientes asientos disponibles en la zona seleccionada.");
 
-            var resultados = new List<ReservaHoldResultDTO>();
+            // 2) Tomar N asientos y mapearlos al formato que espera el dominio
+            var asientosSeleccionados = asientosDisponibles
+                .Take(request.CantidadBoletos)
+                .Select(a => (
+                    asientoId: new Id(a.AsientoId, "AsientoId"),
+                    precioUnitario: a.PrecioUnitario,
+                    label: a.label
+                ))
+                .ToList();
 
-            // 2) Crear holds por cada asiento
-            foreach (var asientoId in asientosDisponibles.Take(request.CantidadBoletos))
+            // 3) Crear UNA sola reserva con varios asientos
+            var reserva = Reserva.CrearHold(
+                new Id(request.EventId, "EventId"),
+                new Id(request.ZonaEventoId, "ZonaEventoId"),
+                new Id(request.UsuarioId, "UsuarioId"),
+                asientosSeleccionados,
+                request.TiempoHold
+            );
+
+            // 4) Guardar la reserva (una sola vez)
+            await _reservaRepository.CrearAsync(reserva, cancellationToken);
+
+            // 5) Marcar todos los asientos como "hold" en el MS de eventos
+            foreach (var asiento in asientosSeleccionados)
             {
-                var reserva = Reserva.CrearHold(
-                    request.EventId,
-                    request.ZonaEventoId,
-                    asientoId,
-                    request.UsuarioId,
-                    request.TiempoHold
-                );
-
-                // Guardar la reserva en Mongo
-                await _reservaRepository.CrearAsync(reserva, cancellationToken);
-
-                // Cambiar estado del asiento en el MS de Eventos a "hold"
                 await _asientosService.ActualizarEstadoAsync(
                     request.EventId,
                     request.ZonaEventoId,
-                    asientoId,
+                    asiento.asientoId.Value,
                     "hold",
                     cancellationToken);
-
-                resultados.Add(new ReservaHoldResultDTO(
-                    reserva.Id,
-                    reserva.AsientoId.Value,
-                    reserva.ExpiraEn!.Value
-                ));
             }
+
+            // 6) Armar respuesta: misma reservaId, distintos asientos
+            var resultados = reserva.Asientos
+                .Select(a => new ReservaHoldResultDTO(
+                    reserva.Id,
+                    a.AsientoId.Value,
+                    reserva.ExpiraEn!.Value
+                ))
+                .ToList();
 
             return resultados;
         }

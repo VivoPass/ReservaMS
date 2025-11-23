@@ -9,3 +9,4 @@ C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Do
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Debug\net8.0\refint\ReservasService.Dominio.dll
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Debug\net8.0\ReservasService.Dominio.pdb
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Debug\net8.0\ref\ReservasService.Dominio.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Dominio\obj\Debug\net8.0\ReservasService.Dominio.sourcelink.json

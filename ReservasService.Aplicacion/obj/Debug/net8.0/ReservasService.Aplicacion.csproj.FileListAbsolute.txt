@@ -13,3 +13,4 @@ C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Ap
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Aplicacion\obj\Debug\net8.0\refint\ReservasService.Aplicacion.dll
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Aplicacion\obj\Debug\net8.0\ReservasService.Aplicacion.pdb
 C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Aplicacion\obj\Debug\net8.0\ref\ReservasService.Aplicacion.dll
+C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Aplicacion\obj\Debug\net8.0\ReservasService.Aplicacion.sourcelink.json

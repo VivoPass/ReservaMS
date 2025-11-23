@@ -16,9 +16,9 @@ namespace ReservasService.Dominio.ValueObjects
         internal ReservaAsiento(Guid id, Id asientoId, decimal precioUnitario, string label)
         {
             Id = id;
-            AsientoId = asientoId;
+            AsientoId = asientoId ?? throw new ArgumentNullException(nameof(asientoId));
             PrecioUnitario = precioUnitario;
-            Label = label;
+            Label = label ?? throw new ArgumentNullException(nameof(label));
         }
     }
 }
