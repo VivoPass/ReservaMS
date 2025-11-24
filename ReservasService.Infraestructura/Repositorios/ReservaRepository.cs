@@ -1,24 +1,30 @@
 ﻿
 // ReservasService.Infraestructura/Reservas/ReservaRepository.cs
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using MongoDB.Driver;
 using ReservasService.Dominio.Entidades;
 using ReservasService.Dominio.Interfaces;
 using ReservasService.Dominio.ValueObjects;
 using ReservasService.Infraestructura.Documents;
+using System;
+using System.Collections.Generic;
+using System.Reflection.Metadata;
+using System.Threading;
+using System.Threading.Tasks;
+using log4net;
+using log4net.Core;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ReservasService.Infraestructura.Repositorios
 {
     public class ReservaRepository : IReservaRepository
     {
         private readonly IMongoCollection<ReservaDocument> _collection;
+        private readonly ILog _logger;
 
-        public ReservaRepository(IMongoDatabase database)
+        public ReservaRepository(IMongoDatabase database, ILog logger)
         {
-            _collection = database.GetCollection<ReservaDocument>("Reservas");
+            _collection = database.GetCollection<ReservaDocument>("reservas");
+            _logger = logger;
         }
 
         public async Task<bool> ExisteHoldActivoAsync(

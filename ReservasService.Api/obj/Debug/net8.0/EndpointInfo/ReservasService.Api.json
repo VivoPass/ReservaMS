@@ -2,6 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "ReservasService API",
+    "description": "API del Microservicio de Reservas que gestiona la información de las reservas realizadas.",
     "version": "v1"
   },
   "paths": {
@@ -10,6 +11,7 @@
         "tags": [
           "Reservas"
         ],
+        "summary": "Crea holds de reserva para una zona y cantidad de boletos.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -67,6 +69,7 @@
         "tags": [
           "Reservas"
         ],
+        "summary": "Obtiene una reserva por su Id.",
         "parameters": [
           {
             "name": "reservaId",
@@ -107,6 +110,7 @@
         "tags": [
           "Reservas"
         ],
+        "summary": "Obtiene todas las reservas de un usuario.",
         "parameters": [
           {
             "name": "usuarioId",
@@ -156,6 +160,7 @@
         "tags": [
           "Reservas"
         ],
+        "summary": "Confirma una reserva existente.",
         "parameters": [
           {
             "name": "reservaId",
@@ -170,45 +175,6 @@
         "responses": {
           "200": {
             "description": "OK"
-          }
-        }
-      }
-    },
-    "/WeatherForecast": {
-      "get": {
-        "tags": [
-          "WeatherForecast"
-        ],
-        "operationId": "GetWeatherForecast",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -319,38 +285,12 @@
           }
         },
         "additionalProperties": false
-      },
-      "WeatherForecast": {
-        "type": "object",
-        "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
       }
     }
   },
   "tags": [
     {
       "name": "Reservas"
-    },
-    {
-      "name": "WeatherForecast"
     }
   ]
 }

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="log4net.Appender.MongoDbAppender" Version="1.1.0" />
+  </ItemGroup>
+
 </Project>

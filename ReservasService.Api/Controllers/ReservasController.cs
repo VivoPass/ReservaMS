@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ReservasService.Api.Contracts;
-using ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona;
 using ReservasService.Aplicacion.Commands.Reservas.ConfirmarReserva;
+using ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona;
 using ReservasService.Aplicacion.DTOS;
 using ReservasService.Aplicacion.Queries.Reservas.ObtenerReservaId;
 using ReservasService.Aplicacion.Queries.Reservas.ObtenerReservaUsuario;
+using log4net;
 
 namespace ReservasService.Api.Controllers
 {
@@ -19,10 +15,14 @@ namespace ReservasService.Api.Controllers
     public class ReservasController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ILog _logger;
 
-        public ReservasController(IMediator mediator)
+        public ReservasController(IMediator mediator, IHttpClientFactory httpClientFactory, ILog logger)
         {
             _mediator = mediator;
+            _httpClientFactory = httpClientFactory;
+            _logger = logger;
         }
 
         /// <summary>
@@ -49,6 +49,20 @@ namespace ReservasService.Api.Controllers
                 AsientoId = x.AsientoId,
                 ExpiraEn = x.ExpiraEn
             }).ToList();
+
+            //Conexion con el MS de Usuarios para la publicacion de la actividad
+            var client = _httpClientFactory.CreateClient("UsuariosClient");
+            var activityBody = new PublishActivityRequest
+            {
+                idUsuario = request.UsuarioId.ToString(),
+                accion = $"Reserva creada para el evento {request.EventId} con la " +
+                         $"cantidad de boletos de {request.CantidadBoletos}."
+            };
+            const string endpoint = "/api/Usuarios/publishActivity";
+            var httpResponse = await client.PostAsJsonAsync(endpoint, activityBody, ct);
+            if (!httpResponse.IsSuccessStatusCode)
+                Console.WriteLine($"[ADVERTENCIA] Falló la publicación de actividad para" +
+                                  $" usuario {request.UsuarioId}. Status: {httpResponse.StatusCode}");
 
             return Ok(response);
         }
@@ -97,6 +111,21 @@ namespace ReservasService.Api.Controllers
             var command = new ConfirmarReservaCommand(reservaId);
 
             var exito = await _mediator.Send(command, ct);
+
+            //Conexion con el MS de Usuarios para la publicacion de la actividad
+            var query = new ObtenerReservasIdQuery(reservaId);
+            var result = await _mediator.Send(query, ct);
+            var client = _httpClientFactory.CreateClient("UsuariosClient");
+            var activityBody = new PublishActivityRequest
+            {
+                idUsuario = result.UsuarioId.ToString(),
+                accion = $"Reserva confirmada para el evento {result.EventId}."
+            };
+            const string endpoint = "/api/Usuarios/publishActivity";
+            var httpResponse = await client.PostAsJsonAsync(endpoint, activityBody, ct);
+            if (!httpResponse.IsSuccessStatusCode)
+                System.Console.WriteLine($"[ADVERTENCIA] Falló la publicación de actividad para " +
+                                         $"usuario {result.UsuarioId}. Status: {httpResponse.StatusCode}");
 
             if (!exito)
                 return BadRequest("No se pudo confirmar la reserva.");

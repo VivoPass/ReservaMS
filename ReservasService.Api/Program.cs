@@ -1,15 +1,23 @@
-using System;
+using log4net;
+using log4net.Config;
 using MediatR;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi;
+using ReservasService.Api.Controllers;
 using ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona;
 using ReservasService.Dominio.Interfaces;
 using ReservasService.Dominio.Interfacess;
 using ReservasService.Infraestructura.Configuracion;
 using ReservasService.Infraestructura.Repositorios;
+using System;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // ---------------------- Services ----------------------
+// Configurar log4net
+XmlConfigurator.Configure(new FileInfo("log4net.config"));
+builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(ReservasController)));
 
 // Controllers
 builder.Services.AddControllers();
@@ -21,8 +29,16 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "ReservasService API",
-        Version = "v1"
+        Version = "v1",
+        Description = "API del Microservicio de Reservas que gestiona la información de las reservas realizadas.",
     });
+
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+    c.IncludeXmlComments(xmlPath);
+
 });
 
 // MongoDB
@@ -44,6 +60,16 @@ builder.Services.AddHttpClient<IAsientosDisponibilidadService, AsientosRepositor
 
     if (string.IsNullOrWhiteSpace(baseUrl))
         throw new InvalidOperationException("Falta la configuración 'EventsService:BaseUrl' en appsettings.");
+
+    client.BaseAddress = new Uri(baseUrl);
+});
+
+builder.Services.AddHttpClient("UsuariosClient", client =>
+{
+    var baseUrl = builder.Configuration["UsersService:BaseUrl"];
+
+    if (string.IsNullOrWhiteSpace(baseUrl))
+        throw new InvalidOperationException("Falta la configuración 'UsersService:BaseUrl' en appsettings.");
 
     client.BaseAddress = new Uri(baseUrl);
 });

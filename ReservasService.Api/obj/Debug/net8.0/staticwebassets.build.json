@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "jXQ90LSswhVaKbg32kelVQhFF+f1B/oqxziCRNyKNjk=",
-  "Source": "ReservasService.Api",
-  "BasePath": "_content/ReservasService.Api",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"jXQ90LSswhVaKbg32kelVQhFF+f1B/oqxziCRNyKNjk=","Source":"ReservasService.Api","BasePath":"_content/ReservasService.Api","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
