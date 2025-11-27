@@ -3,6 +3,9 @@ using log4net.Config;
 using MediatR;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi;
+using Reservas.Infrastructure.Configurations;
+using Reservas.Infrastructure.Interfaces;
+using Reservas.Infrastructure.Persistences.Repositories;
 using ReservasService.Api.Controllers;
 using ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona;
 using ReservasService.Dominio.Interfaces;
@@ -50,8 +53,14 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(CrearReservasPorZonaYCantidadCommand).Assembly);
 });
 
+// Auditorías de Reservas
+builder.Services.AddSingleton<AuditoriaDbConfig>();
+builder.Services.AddScoped<IAuditoriaRepository, AuditoriaRepository>();
+
 // Repositorio de Reservas
 builder.Services.AddScoped<IReservaRepository, ReservaRepository>();
+
+
 
 // HttpClient hacia el microservicio de Eventos
 builder.Services.AddHttpClient<IAsientosDisponibilidadService, AsientosRepository>(client =>

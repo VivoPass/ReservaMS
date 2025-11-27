@@ -11,8 +11,9 @@
         "tags": [
           "Reservas"
         ],
-        "summary": "Crea holds de reserva para una zona y cantidad de boletos.",
+        "summary": "Crea un hold de reserva para una zona y cantidad de boletos.",
         "requestBody": {
+          "description": "Datos de la reserva (evento, zona, usuario y cantidad de boletos).",
           "content": {
             "application/json": {
               "schema": {
@@ -60,6 +61,29 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -69,11 +93,12 @@
         "tags": [
           "Reservas"
         ],
-        "summary": "Obtiene una reserva por su Id.",
+        "summary": "Obtiene una reserva por su identificador.",
         "parameters": [
           {
             "name": "reservaId",
             "in": "path",
+            "description": "ID de la reserva.",
             "required": true,
             "schema": {
               "type": "string",
@@ -101,6 +126,29 @@
                 }
               }
             }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -110,11 +158,12 @@
         "tags": [
           "Reservas"
         ],
-        "summary": "Obtiene todas las reservas de un usuario.",
+        "summary": "Obtiene todas las reservas asociadas a un usuario.",
         "parameters": [
           {
             "name": "usuarioId",
             "in": "path",
+            "description": "ID del usuario.",
             "required": true,
             "schema": {
               "type": "string",
@@ -151,6 +200,9 @@
                 }
               }
             }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -160,11 +212,12 @@
         "tags": [
           "Reservas"
         ],
-        "summary": "Confirma una reserva existente.",
+        "summary": "Confirma una reserva existente (cambia asientos a ocupados y marca la reserva como confirmada).",
         "parameters": [
           {
             "name": "reservaId",
             "in": "path",
+            "description": "ID de la reserva a confirmar.",
             "required": true,
             "schema": {
               "type": "string",
@@ -173,8 +226,31 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -203,6 +279,33 @@
           }
         },
         "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
       },
       "ReservaAsientoDTO": {
         "type": "object",

@@ -1,36 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using log4net;
 using MediatR;
+
 using ReservasService.Aplicacion.DTOS;
-using ReservasService.Aplicacion.Queries.Reservas.ObtenerReservaUsuario;
 using ReservasService.Dominio.Interfaces;
+using ReservasService.Dominio.Excepciones.Infraestructura;
+using ReservasService.Dominio.Excepciones.Reserva;
 
 namespace ReservasService.Aplicacion.Queries.Reservas.ObtenerReservaId
 {
-
     public class ObtenerReservasIdQueryHandler
         : IRequestHandler<ObtenerReservasIdQuery, ReservaUsuarioDTO?>
     {
-        private readonly IReservaRepository _reservaRepository;
+        private readonly IReservaRepository ReservaRepository;
+        private readonly ILog Logger;
 
-        public ObtenerReservasIdQueryHandler(IReservaRepository reservaRepository)
+        public ObtenerReservasIdQueryHandler(
+            IReservaRepository reservaRepository,
+            ILog logger)
         {
-            _reservaRepository = reservaRepository;
+            ReservaRepository = reservaRepository ?? throw new ReservaRepositoryNullException();
+            Logger = logger ?? throw new LoggerNullException();
         }
 
         public async Task<ReservaUsuarioDTO?> Handle(
             ObtenerReservasIdQuery request,
             CancellationToken cancellationToken)
         {
-            var r = await _reservaRepository.ObtenerPorIdAsync(
+            Logger.Debug($"[ObtenerReservaId] Inicio. ReservaGuid='{request.ReservaGuid}'.");
+
+            var r = await ReservaRepository.ObtenerPorIdAsync(
                 request.ReservaGuid,
                 cancellationToken);
 
             if (r is null)
-                return null; // o lanzar excepción si prefieres
+            {
+                Logger.Warn($"[ObtenerReservaId] No se encontró la reserva con ID='{request.ReservaGuid}'.");
+                return null; // si luego quieres, aquí puedes cambiar a lanzar excepción
+            }
+
+            Logger.Debug($"[ObtenerReservaId] Reserva encontrada. ReservaId='{r.Id}', UsuarioId='{r.UsuarioId.Value}'.");
 
             var dto = new ReservaUsuarioDTO
             {
@@ -51,6 +63,8 @@ namespace ReservasService.Aplicacion.Queries.Reservas.ObtenerReservaId
                     })
                     .ToList()
             };
+
+            Logger.Debug($"[ObtenerReservaId] DTO construido correctamente para ReservaId='{dto.ReservaId}'.");
 
             return dto;
         }
