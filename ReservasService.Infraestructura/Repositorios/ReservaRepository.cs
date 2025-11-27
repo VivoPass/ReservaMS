@@ -102,7 +102,12 @@ namespace ReservasService.Infraestructura.Repositorios
             try
             {
                 var filter = Builders<ReservaDocument>.Filter.Eq(x => x.Id, reservaId);
-                var doc = await _collection.Find(filter).FirstOrDefaultAsync(ct);
+                using var cursor = await _collection.FindAsync(
+                    filter,
+                    new FindOptions<ReservaDocument, ReservaDocument>(),
+                    ct);
+
+                var doc = await cursor.FirstOrDefaultAsync(ct);
 
                 if (doc is null)
                 {
@@ -171,7 +176,12 @@ namespace ReservasService.Infraestructura.Repositorios
                 var filter = builder.Eq(x => x.Estado, (int)Reserva.ReservaEstado.Hold) &
                              builder.Lt(x => x.ExpiraEn, fechaLimite);
 
-                var docs = await _collection.Find(filter).ToListAsync(ct);
+                using var cursor = await _collection.FindAsync(
+                    filter,
+                    new FindOptions<ReservaDocument, ReservaDocument>(),
+                    ct);
+
+                var docs = await cursor.ToListAsync(ct);
 
                 var result = new List<Reserva>();
                 foreach (var doc in docs)
@@ -198,7 +208,12 @@ namespace ReservasService.Infraestructura.Repositorios
                 var builder = Builders<ReservaDocument>.Filter;
                 var filter = builder.Eq(x => x.UsuarioId, usuarioId);
 
-                var docs = await _collection.Find(filter).ToListAsync(ct);
+                using var cursor = await _collection.FindAsync(
+                    filter,
+                    new FindOptions<ReservaDocument, ReservaDocument>(),
+                    ct);
+
+                var docs = await cursor.ToListAsync(ct);
 
                 var result = new List<Reserva>();
                 foreach (var doc in docs)
