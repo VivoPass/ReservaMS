@@ -14,6 +14,6 @@ namespace ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona
         public Guid ZonaEventoId { get; init; }
         public int CantidadBoletos { get; init; }
         public Guid UsuarioId { get; init; }
-        public TimeSpan TiempoHold { get; init; } = TimeSpan.FromMinutes(10);
+        public TimeSpan TiempoHold { get; init; } = TimeSpan.FromDays(3);
     }
 }

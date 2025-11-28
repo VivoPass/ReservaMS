@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReservasService.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb4076c5932c1fcdc02f4a5e375fbd21d1bb9c2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReservasService.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReservasService.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

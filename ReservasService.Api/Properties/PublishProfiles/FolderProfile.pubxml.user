@@ -2,8 +2,8 @@
 <!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\ejic2\OneDrive\Escritorio\API prueba\ReservasService\ReservasService.Api\bin\Release\net8.0\publish\</_PublishTargetUrl>
-    <History>True|2025-11-20T07:41:34.1589015Z||;</History>
+    <_PublishTargetUrl>C:\Users\anale\OneDrive\Documentos\UCAB\DESA 2\Proyecto\VivoPass\ReservaMS\ReservasService.Api\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-11-27T23:06:10.6469629Z||;True|2025-11-27T16:29:40.3418015-04:00||;True|2025-11-27T11:25:16.8339141-04:00||;True|2025-11-20T03:41:34.1589015-04:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
