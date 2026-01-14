@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Test\\ReservasService.Test.csproj": {}
+    "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Test\\ReservasService.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Api\\ReservasService.Api.csproj": {
+    "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\ReservasService.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Api\\ReservasService.Api.csproj",
+        "projectUniqueName": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\ReservasService.Api.csproj",
         "projectName": "ReservasService.Api",
-        "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Api\\ReservasService.Api.csproj",
-        "packagesPath": "C:\\Users\\anale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Api\\obj\\",
+        "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\ReservasService.Api.csproj",
+        "packagesPath": "C:\\Users\\ejic2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\anale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejic2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,14 +32,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj"
               },
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj"
               },
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj"
               }
             }
           }
@@ -54,7 +54,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -108,24 +108,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj": {
+    "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj",
         "projectName": "ReservasService.Aplicacion",
-        "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj",
-        "packagesPath": "C:\\Users\\anale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\obj\\",
+        "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\ejic2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\anale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejic2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -140,8 +140,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj"
               }
             }
           }
@@ -156,7 +156,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -199,24 +199,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
+    "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj",
         "projectName": "ReservasService.Dominio",
-        "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj",
-        "packagesPath": "C:\\Users\\anale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj",
+        "packagesPath": "C:\\Users\\ejic2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\anale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejic2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -243,7 +243,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -270,24 +270,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj": {
+    "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj",
+        "projectUniqueName": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj",
         "projectName": "ReservasService.Infraestructura",
-        "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj",
-        "packagesPath": "C:\\Users\\anale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Infraestructura\\obj\\",
+        "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj",
+        "packagesPath": "C:\\Users\\ejic2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\anale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejic2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -302,11 +302,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj"
               },
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj"
               }
             }
           }
@@ -321,7 +321,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -372,24 +372,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Test\\ReservasService.Test.csproj": {
+    "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Test\\ReservasService.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Test\\ReservasService.Test.csproj",
+        "projectUniqueName": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Test\\ReservasService.Test.csproj",
         "projectName": "ReservasService.Test",
-        "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Test\\ReservasService.Test.csproj",
-        "packagesPath": "C:\\Users\\anale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Test\\obj\\",
+        "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Test\\ReservasService.Test.csproj",
+        "packagesPath": "C:\\Users\\ejic2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\anale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ejic2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -404,17 +404,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Api\\ReservasService.Api.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Api\\ReservasService.Api.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\ReservasService.Api.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\ReservasService.Api.csproj"
               },
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj"
               },
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Dominio\\ReservasService.Dominio.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj"
               },
-              "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj": {
-                "projectPath": "C:\\Users\\anale\\OneDrive\\Documentos\\UCAB\\DESA 2\\Proyecto\\VivoPass\\ReservaMS\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj"
+              "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj"
               }
             }
           }
@@ -429,7 +429,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -476,7 +476,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -60,7 +60,7 @@ builder.Services.AddScoped<IAuditoriaRepository, AuditoriaRepository>();
 // Repositorio de Reservas
 builder.Services.AddScoped<IReservaRepository, ReservaRepository>();
 
-
+builder.Services.AddHostedService<ReservasService.Infraestructura.BackgroundJobs.AutoCancelacionHoldsService>();
 
 // HttpClient hacia el microservicio de Eventos
 builder.Services.AddHttpClient<IAsientosDisponibilidadService, AsientosRepository>(client =>
