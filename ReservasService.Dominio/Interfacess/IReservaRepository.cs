@@ -40,5 +40,7 @@ namespace ReservasService.Dominio.Interfaces
             CancellationToken ct = default);
 
         Task<List<Reserva>> ObtenerPorUsuarioAsync(Guid usuarioId, CancellationToken ct);
+
+        Task<List<Reserva>> ObtenerTodasAsync(CancellationToken ct = default);
     }
 }

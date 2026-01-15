@@ -3,16 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.api\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|solutionrelative:reservasservice.api\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.api\\contracts\\reservaholdresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|solutionrelative:reservasservice.api\\contracts\\reservaholdresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE3FB8FF-7021-42CB-BB67-12258045473A}|ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.infraestructura\\repositorios\\reservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE3FB8FF-7021-42CB-BB67-12258045473A}|ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj|solutionrelative:reservasservice.infraestructura\\repositorios\\reservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.dominio\\interfacess\\ireservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|solutionrelative:reservasservice.dominio\\interfacess\\ireservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\queries\\reservas\\obtenertodas\\obtenertodaslasreservasqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\queries\\reservas\\obtenertodas\\obtenertodaslasreservasqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.dominio\\reservasservice.dominio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|solutionrelative:reservasservice.dominio\\reservasservice.dominio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\queries\\reservas\\obtenertodas\\obtenertodaslasreservasquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\queries\\reservas\\obtenertodas\\obtenertodaslasreservasquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\dtos\\reservausuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\dtos\\reservausuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\queries\\reservas\\obtenerreservaid\\obtenerreservasidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\queries\\reservas\\obtenerreservaid\\obtenerreservasidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\dtos\\reservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\dtos\\reservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\dtos\\reservaholdresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\dtos\\reservaholdresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\dtos\\reservaasientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\dtos\\reservaasientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.dominio\\entidades\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|solutionrelative:reservasservice.dominio\\entidades\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\commands\\reservas\\cancelarreserva\\cancelarreservacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\commands\\reservas\\cancelarreserva\\cancelarreservacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|solutionrelative:reservasservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.api\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|solutionrelative:reservasservice.api\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\commands\\reservas\\cancelarreserva\\cancelarreservacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\commands\\reservas\\cancelarreserva\\cancelarreservacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\commands\\reservas\\cancelarreserva\\cancelarreservacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +71,8 @@
       "RelativeMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|solutionrelative:reservasservice.dominio\\interfacess\\iasientosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.dominio\\interfacess\\ireservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC718381-D349-42FE-B936-09180EFC27B2}|ReservasService.Dominio\\ReservasService.Dominio.csproj|solutionrelative:reservasservice.dominio\\interfacess\\ireservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DE3FB8FF-7021-42CB-BB67-12258045473A}|ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.infraestructura\\repositorios\\asientosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE3FB8FF-7021-42CB-BB67-12258045473A}|ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj|solutionrelative:reservasservice.infraestructura\\repositorios\\asientosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE3FB8FF-7021-42CB-BB67-12258045473A}|ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.infraestructura\\repositorios\\reservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE3FB8FF-7021-42CB-BB67-12258045473A}|ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj|solutionrelative:reservasservice.infraestructura\\repositorios\\reservarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE3FB8FF-7021-42CB-BB67-12258045473A}|ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.infraestructura\\backgroundjobs\\autocancelacionholdsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +95,6 @@
       "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\commands\\reservas\\cancelacionautomatica\\cancelarholdsexpiradoscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{88170AC8-CF00-4D31-BD08-EDA8FA0C284B}|ReservasService.Api\\ReservasService.Api.csproj|solutionrelative:reservasservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|c:\\users\\ejic2\\onedrive\\escritorio\\api prueba\\reservasservice\\reservasservice.aplicacion\\commands\\reservas\\crearrerservazona\\crearreservasporzonaycantidadcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F3F07F2-43B7-42CA-B390-F1CEF22F2613}|ReservasService.Aplicacion\\ReservasService.Aplicacion.csproj|solutionrelative:reservasservice.aplicacion\\commands\\reservas\\crearrerservazona\\crearreservasporzonaycantidadcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -74,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,59 +130,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAsientosService.cs",
-              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\Interfacess\\IAsientosService.cs",
-              "RelativeDocumentMoniker": "ReservasService.Dominio\\Interfacess\\IAsientosService.cs",
-              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\Interfacess\\IAsientosService.cs",
-              "RelativeToolTip": "ReservasService.Dominio\\Interfacess\\IAsientosService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ReservaHoldResponse.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\Contracts\\ReservaHoldResponse.cs",
+              "RelativeDocumentMoniker": "ReservasService.Api\\Contracts\\ReservaHoldResponse.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\Contracts\\ReservaHoldResponse.cs",
+              "RelativeToolTip": "ReservasService.Api\\Contracts\\ReservaHoldResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T04:53:59.979Z",
+              "WhenOpened": "2026-01-15T22:20:05.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ReservasService.Dominio",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj",
+              "RelativeDocumentMoniker": "ReservasService.Dominio\\ReservasService.Dominio.csproj",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\ReservasService.Dominio.csproj",
+              "RelativeToolTip": "ReservasService.Dominio\\ReservasService.Dominio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-15T22:18:55.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ObtenerReservasIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerReservaId\\ObtenerReservasIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerReservaId\\ObtenerReservasIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerReservaId\\ObtenerReservasIdQueryHandler.cs",
+              "RelativeToolTip": "ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerReservaId\\ObtenerReservasIdQueryHandler.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T22:16:45.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ObtenerTodasLasReservasQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerTodas\\ObtenerTodasLasReservasQueryHandler.cs",
+              "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerTodas\\ObtenerTodasLasReservasQueryHandler.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerTodas\\ObtenerTodasLasReservasQueryHandler.cs",
+              "RelativeToolTip": "ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerTodas\\ObtenerTodasLasReservasQueryHandler.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T22:14:31.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReservaUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\DTOS\\ReservaUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "ReservasService.Aplicacion\\DTOS\\ReservaUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\DTOS\\ReservaUsuarioDTO.cs",
+              "RelativeToolTip": "ReservasService.Aplicacion\\DTOS\\ReservaUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T22:12:46.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ObtenerTodasLasReservasQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerTodas\\ObtenerTodasLasReservasQuery.cs",
+              "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerTodas\\ObtenerTodasLasReservasQuery.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerTodas\\ObtenerTodasLasReservasQuery.cs",
+              "RelativeToolTip": "ReservasService.Aplicacion\\Queries\\Reservas\\ObtenerTodas\\ObtenerTodasLasReservasQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T22:11:55.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IReservaRepository.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\Interfacess\\IReservaRepository.cs",
               "RelativeDocumentMoniker": "ReservasService.Dominio\\Interfacess\\IReservaRepository.cs",
               "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\Interfacess\\IReservaRepository.cs",
               "RelativeToolTip": "ReservasService.Dominio\\Interfacess\\IReservaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T04:53:59.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AsientosRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\Repositorios\\AsientosRepository.cs",
-              "RelativeDocumentMoniker": "ReservasService.Infraestructura\\Repositorios\\AsientosRepository.cs",
-              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\Repositorios\\AsientosRepository.cs",
-              "RelativeToolTip": "ReservasService.Infraestructura\\Repositorios\\AsientosRepository.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAwIAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\Controllers\\ReservasController.cs",
+              "RelativeDocumentMoniker": "ReservasService.Api\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\Controllers\\ReservasController.cs",
+              "RelativeToolTip": "ReservasService.Api\\Controllers\\ReservasController.cs",
+              "ViewState": "AgIAAGQBAAAAAAAAAAAswCIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T04:53:51.945Z",
+              "WhenOpened": "2025-11-27T20:00:55.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "ReservaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\DTOS\\ReservaDTO.cs",
+              "RelativeDocumentMoniker": "ReservasService.Aplicacion\\DTOS\\ReservaDTO.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\DTOS\\ReservaDTO.cs",
+              "RelativeToolTip": "ReservasService.Aplicacion\\DTOS\\ReservaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T22:13:19.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ReservaRepository.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\Repositorios\\ReservaRepository.cs",
               "RelativeDocumentMoniker": "ReservasService.Infraestructura\\Repositorios\\ReservaRepository.cs",
               "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\Repositorios\\ReservaRepository.cs",
               "RelativeToolTip": "ReservasService.Infraestructura\\Repositorios\\ReservaRepository.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwIkAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAAAAUBAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T04:49:22.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
+              "Title": "ReservaHoldResultDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\DTOS\\ReservaHoldResultDTO.cs",
+              "RelativeDocumentMoniker": "ReservasService.Aplicacion\\DTOS\\ReservaHoldResultDTO.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\DTOS\\ReservaHoldResultDTO.cs",
+              "RelativeToolTip": "ReservasService.Aplicacion\\DTOS\\ReservaHoldResultDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T22:12:56.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReservaAsientoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\DTOS\\ReservaAsientoDTO.cs",
+              "RelativeDocumentMoniker": "ReservasService.Aplicacion\\DTOS\\ReservaAsientoDTO.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\DTOS\\ReservaAsientoDTO.cs",
+              "RelativeToolTip": "ReservasService.Aplicacion\\DTOS\\ReservaAsientoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T22:12:50.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "CancelarReservaCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Commands\\Reservas\\CancelarReserva\\CancelarReservaCommandHandler.cs",
               "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Commands\\Reservas\\CancelarReserva\\CancelarReservaCommandHandler.cs",
@@ -154,12 +294,11 @@
               "RelativeToolTip": "ReservasService.Aplicacion\\Commands\\Reservas\\CancelarReserva\\CancelarReservaCommandHandler.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAACYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T04:39:49.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T04:39:49.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "CancelarReservaCommand.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Commands\\Reservas\\CancelarReserva\\CancelarReservaCommand.cs",
               "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Commands\\Reservas\\CancelarReserva\\CancelarReservaCommand.cs",
@@ -167,12 +306,11 @@
               "RelativeToolTip": "ReservasService.Aplicacion\\Commands\\Reservas\\CancelarReserva\\CancelarReservaCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T04:38:36.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T04:38:36.416Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "AutoCancelacionHoldsService.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\BackgroundJobs\\AutoCancelacionHoldsService.cs",
               "RelativeDocumentMoniker": "ReservasService.Infraestructura\\BackgroundJobs\\AutoCancelacionHoldsService.cs",
@@ -180,38 +318,61 @@
               "RelativeToolTip": "ReservasService.Infraestructura\\BackgroundJobs\\AutoCancelacionHoldsService.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T05:47:26.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T05:47:26.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReservasController.cs",
-              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\Controllers\\ReservasController.cs",
-              "RelativeDocumentMoniker": "ReservasService.Api\\Controllers\\ReservasController.cs",
-              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\Controllers\\ReservasController.cs",
-              "RelativeToolTip": "ReservasService.Api\\Controllers\\ReservasController.cs",
-              "ViewState": "AgIAADEBAAAAAAAAAAAhwEEBAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T20:00:55.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "Reserva.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\Entidades\\Reserva.cs",
               "RelativeDocumentMoniker": "ReservasService.Dominio\\Entidades\\Reserva.cs",
               "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\Entidades\\Reserva.cs",
               "RelativeToolTip": "ReservasService.Dominio\\Entidades\\Reserva.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA/wCQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAA8wKcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T05:41:11.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "ReservasService.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\appsettings.json",
+              "RelativeToolTip": "ReservasService.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-27T20:42:30.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AsientosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\Repositorios\\AsientosRepository.cs",
+              "RelativeDocumentMoniker": "ReservasService.Infraestructura\\Repositorios\\AsientosRepository.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\Repositorios\\AsientosRepository.cs",
+              "RelativeToolTip": "ReservasService.Infraestructura\\Repositorios\\AsientosRepository.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T04:53:51.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAsientosService.cs",
+              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\Interfacess\\IAsientosService.cs",
+              "RelativeDocumentMoniker": "ReservasService.Dominio\\Interfacess\\IAsientosService.cs",
+              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Dominio\\Interfacess\\IAsientosService.cs",
+              "RelativeToolTip": "ReservasService.Dominio\\Interfacess\\IAsientosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T04:53:59.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\Program.cs",
               "RelativeDocumentMoniker": "ReservasService.Api\\Program.cs",
@@ -223,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "ReservasService.Infraestructura.csproj",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj",
               "RelativeDocumentMoniker": "ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj",
@@ -231,11 +392,12 @@
               "RelativeToolTip": "ReservasService.Infraestructura\\ReservasService.Infraestructura.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-14T05:46:44.004Z"
+              "WhenOpened": "2026-01-14T05:46:44.004Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "CancelarHoldsExpiradosHandler.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Commands\\Reservas\\CancelacionAutomatica\\CancelarHoldsExpiradosHandler.cs",
               "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Commands\\Reservas\\CancelacionAutomatica\\CancelarHoldsExpiradosHandler.cs",
@@ -247,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "CancelarHoldsExpiradosCommand.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Commands\\Reservas\\CancelacionAutomatica\\CancelarHoldsExpiradosCommand.cs",
               "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Commands\\Reservas\\CancelacionAutomatica\\CancelarHoldsExpiradosCommand.cs",
@@ -259,19 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "ReservasService.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Api\\appsettings.json",
-              "RelativeToolTip": "ReservasService.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-27T20:42:30.485Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "CrearReservasPorZonaYCantidadCommand.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Commands\\Reservas\\CrearRerservaZona\\CrearReservasPorZonaYCantidadCommand.cs",
               "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Commands\\Reservas\\CrearRerservaZona\\CrearReservasPorZonaYCantidadCommand.cs",
@@ -283,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "CrearReservasPorZonaYCantidadCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\ejic2\\OneDrive\\Escritorio\\API prueba\\ReservasService\\ReservasService.Aplicacion\\Commands\\Reservas\\CrearRerservaZona\\CrearReservasPorZonaYCantidadCommandHandler.cs",
               "RelativeDocumentMoniker": "ReservasService.Aplicacion\\Commands\\Reservas\\CrearRerservaZona\\CrearReservasPorZonaYCantidadCommandHandler.cs",

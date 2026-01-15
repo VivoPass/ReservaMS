@@ -302,6 +302,18 @@
           }
         }
       }
+    },
+    "/api/Reservas/todas": {
+      "get": {
+        "tags": [
+          "Reservas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

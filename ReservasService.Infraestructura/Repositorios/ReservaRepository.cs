@@ -286,5 +286,33 @@ namespace ReservasService.Infraestructura.Repositorios
 
             return reserva;
         }
+
+
+        public async Task<List<Reserva>> ObtenerTodasAsync(CancellationToken ct = default)
+        {
+            _logger.Debug("[Reservas] Consultando todas las reservas.");
+
+            try
+            {
+                using var cursor = await _collection.FindAsync(
+                    Builders<ReservaDocument>.Filter.Empty,
+                    cancellationToken: ct);
+
+                var docs = await cursor.ToListAsync(ct);
+
+                var result = new List<Reserva>();
+                foreach (var doc in docs)
+                    result.Add(ToDomain(doc));
+
+                _logger.Debug($"[Reservas] Total reservas obtenidas: {result.Count}");
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                _logger.Error("[Reservas] Error al obtener todas las reservas.", ex);
+                throw new ReservaRepositoryException(ex);
+            }
+        }
     }
 }

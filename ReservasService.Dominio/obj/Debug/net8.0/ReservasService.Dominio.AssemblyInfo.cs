@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReservasService.Dominio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b3da8df2041f852581fc25f3b49447f756679ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b1013a08b29adb25e17eb89eb299027289f8277")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReservasService.Dominio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReservasService.Dominio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,6 +16,7 @@ using ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona;
 using ReservasService.Aplicacion.DTOS;
 using ReservasService.Aplicacion.Queries.Reservas.ObtenerReservaId;
 using ReservasService.Aplicacion.Queries.Reservas.ObtenerReservaUsuario;
+using ReservasService.Aplicacion.Queries.Reservas.ObtenerTodas;
 using ReservasService.Dominio.Excepciones.Api;
 using LoggerNullException = ReservasService.Dominio.Excepciones.Infraestructura.LoggerNullException;
 
@@ -389,6 +390,16 @@ namespace ReservasService.Api.Controllers
         }
 
         #endregion
+
+
+        [HttpGet("todas")]
+        public async Task<IActionResult> ObtenerTodasLasReservas()
+        {
+            var query = new ObtenerTodasLasReservasQuery();
+            var result = await Mediator.Send(query);
+            return Ok(result);
+        }
+
 
     }
 }

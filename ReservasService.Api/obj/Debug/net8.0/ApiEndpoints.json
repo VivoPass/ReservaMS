@@ -153,6 +153,16 @@
   },
   {
     "ContainingType": "ReservasService.Api.Controllers.ReservasController",
+    "Method": "ObtenerTodasLasReservas",
+    "RelativePath": "api/Reservas/todas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReservasService.Api.Controllers.ReservasController",
     "Method": "ObtenerReservasPorUsuario",
     "RelativePath": "api/Reservas/usuario/{usuarioId}",
     "HttpMethod": "GET",
