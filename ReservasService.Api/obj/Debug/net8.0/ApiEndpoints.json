@@ -41,6 +41,42 @@
   },
   {
     "ContainingType": "ReservasService.Api.Controllers.ReservasController",
+    "Method": "CancelarReserva",
+    "RelativePath": "api/Reservas/{reservaId}/cancelar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservaId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReservasService.Api.Controllers.ReservasController",
     "Method": "ConfirmarReserva",
     "RelativePath": "api/Reservas/{reservaId}/confirmar",
     "HttpMethod": "POST",

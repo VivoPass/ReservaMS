@@ -254,6 +254,54 @@
           }
         }
       }
+    },
+    "/api/Reservas/{reservaId}/cancelar": {
+      "delete": {
+        "tags": [
+          "Reservas"
+        ],
+        "summary": "Cancela una reserva existente (libera asientos y marca la reserva como liberada).",
+        "parameters": [
+          {
+            "name": "reservaId",
+            "in": "path",
+            "description": "ID de la reserva a cancelar.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
     }
   },
   "components": {

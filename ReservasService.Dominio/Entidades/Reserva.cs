@@ -147,5 +147,21 @@ namespace ReservasService.Dominio.Entidades
         {
             return ExpiraEn.HasValue && ExpiraEn.Value <= DateTime.UtcNow;
         }
+
+
+        public void Cancelar()
+        {
+            if (Estado != ReservaEstado.Hold)
+                throw new InvalidOperationException("Solo se pueden cancelar reservas en estado Hold.");
+
+            if (EstaExpirada())
+                throw new InvalidOperationException("No se puede cancelar una reserva expirada.");
+
+            Estado = ReservaEstado.Liberada;
+
+            // Opcional: guardar motivo (agrega un campo si lo deseas)
+            // MotivoCancelacion = motivo;
+        }
+
     }
 }

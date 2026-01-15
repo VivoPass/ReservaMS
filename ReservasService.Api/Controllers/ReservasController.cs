@@ -10,6 +10,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 using ReservasService.Api.Contracts;
+using ReservasService.Aplicacion.Commands.Reservas.CancelarReserva;
 using ReservasService.Aplicacion.Commands.Reservas.ConfirmarReserva;
 using ReservasService.Aplicacion.Commands.Reservas.CrearRerservaZona;
 using ReservasService.Aplicacion.DTOS;
@@ -296,5 +297,98 @@ namespace ReservasService.Api.Controllers
             }
         }
         #endregion
+
+
+        #region CancelarReserva(Guid reservaId)
+
+        /// <summary>
+        /// Cancela una reserva existente (libera asientos y marca la reserva como liberada).
+        /// </summary>
+        /// <param name="reservaId">ID de la reserva a cancelar.</param>
+        /// <param name="ct">Token de cancelación.</param>
+        /// <returns>NoContent si se cancela correctamente.</returns>
+        [HttpDelete("{reservaId:guid}/cancelar")]
+        [ProducesResponseType((int)HttpStatusCode.NoContent)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        public async Task<IActionResult> CancelarReserva(
+            Guid reservaId,
+            CancellationToken ct)
+        {
+            Logger.Info($"[ReservasController] DELETE /{{reservaId}}/cancelar iniciado. ReservaId='{reservaId}'.");
+
+            try
+            {
+                // 1) Ejecutar command
+                var command = new CancelarReservaCommand(reservaId);
+                var exito = await Mediator.Send(command, ct);
+
+                if (!exito)
+                {
+                    Logger.Warn($"[ReservasController] CancelarReservaCommand retornó false para ReservaId='{reservaId}'.");
+                    return BadRequest("No se pudo cancelar la reserva.");
+                }
+
+                Logger.Info($"[ReservasController] ReservaId='{reservaId}' cancelada correctamente. Intentando publicar actividad en Usuarios.");
+
+                // 2) Intentar obtener la reserva cancelada para publicar actividad
+                ReservaUsuarioDTO? reserva = null;
+                try
+                {
+                    var query = new ObtenerReservasIdQuery(reservaId);
+                    reserva = await Mediator.Send(query, ct);
+                }
+                catch (Exception exQuery)
+                {
+                    Logger.Error($"[ReservasController] Error al obtener la reserva cancelada para publicar actividad. ReservaId='{reservaId}'.", exQuery);
+                }
+
+                // 3) Publicar actividad (solo si se pudo obtener la reserva)
+                if (reserva != null)
+                {
+                    try
+                    {
+                        var client = HttpClientFactory.CreateClient("UsuariosClient");
+                        var activityBody = new PublishActivityRequest
+                        {
+                            idUsuario = reserva.UsuarioId.ToString(),
+                            accion = $"Reserva cancelada para el evento {reserva.EventId}."
+                        };
+
+                        const string endpoint = "/api/Usuarios/publishActivity";
+                        Logger.Debug($"[ReservasController] Publicando actividad de cancelación. UsuarioId='{activityBody.idUsuario}', Evento='{reserva.EventId}'.");
+
+                        var httpResponse = await client.PostAsJsonAsync(endpoint, activityBody, ct);
+
+                        if (!httpResponse.IsSuccessStatusCode)
+                        {
+                            Logger.Warn($"[ReservasController] Falló la publicación de actividad para usuario {reserva.UsuarioId}. Status={httpResponse.StatusCode}.");
+                        }
+                        else
+                        {
+                            Logger.Info($"[ReservasController] Actividad de cancelación publicada correctamente para usuario {reserva.UsuarioId}.");
+                        }
+                    }
+                    catch (Exception exPub)
+                    {
+                        Logger.Error($"[ReservasController] Error al publicar actividad de cancelación para ReservaId='{reservaId}'.", exPub);
+                    }
+                }
+                else
+                {
+                    Logger.Warn($"[ReservasController] No se pudo obtener la reserva '{reservaId}' tras cancelarla. Se continúa sin romper flujo.");
+                }
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                Logger.Error($"[ReservasController] Error al cancelar reserva '{reservaId}'.", ex);
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        #endregion
+
     }
 }
